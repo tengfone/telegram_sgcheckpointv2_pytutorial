@@ -24,7 +24,7 @@ This version uses telegram [ConversationHandler](https://python-telegram-bot.rea
 ## Getting Started
 This tutorial will be using PyCharm as an IDE. 
 
-###Importing files from previous project
+### Importing files from previous project
 
 We can always install a fresh copy of everything by using ```pip install``` but that will take too long and you do not
 know which version you will be using. Therefore, we can use someone's/your own previously done project to use the same 
@@ -81,12 +81,12 @@ rates_reply_keyboard = [['🇸🇬➡️🇲🇾', '🇲🇾➡️🇸🇬'], ['
 
 Let's look at ```menu_reply_keyboard```
 
-######emoji
+###### emoji
 
 Emoji's can be added easily into the string function (Only for Python 3.x) for Python 2.x you will have to include the Unicode function. To add the
 emoji in Python 3.0 just launch Telegram, copy and paste the emoji from Telegram into the string.
 
-######layout
+###### layout
 If you noticed, the keyboard is stored as a list. By putting it in ```[['A'],['B'],['C']]```, your keyboard layout will look like this:
 
 ![hori](https://user-images.githubusercontent.com/20770447/62673733-2403a480-b9d2-11e9-8319-ecc50b23b916.png)
@@ -98,7 +98,7 @@ If you place it as ```[['A','B','C']]``` it will be like this:
 
 Bear in mind you can mix and match the layout. Eg: ```camera_reply_keyboard = [['Woodlands', 'Tuas'], ['Back']]```
 
-######Reply Keyboard
+###### Reply Keyboard
 To "enable" the keyboard, you will have to attach it to a text message. As such, we use ```update.message.reply_text``` function
 to call the keyboard.
 
@@ -118,7 +118,7 @@ When you use the function ```update.message.reply_text```, the User ID and chat 
 identify what kind of keyboard you would like to pass it to. ```ReplyKeyboardMarkup(YOUR_KEY_BOARD, FUNCTION_TO_EXECUTE)```
 Read up [telegram.ReplyKeyboardMarkup](https://python-telegram-bot.readthedocs.io/en/stable/telegram.replykeyboardmarkup.html) for more info.
 
-######message
+###### message
 This function passes all kinds of messages, from replies to getting input/output. The format can be ```update.message.reply_photo``` or ```update.message.reply_text``` whereby it takes
 in the User's input / Chat ID etc.
 ```python
@@ -140,7 +140,7 @@ def send_typing_action(func):
 
     return command_func
 ``` 
-###[Conversation Handler](https://python-telegram-bot.readthedocs.io/en/stable/telegram.ext.conversationhandler.html)
+### [Conversation Handler](https://python-telegram-bot.readthedocs.io/en/stable/telegram.ext.conversationhandler.html)
 This handler will be our primary way of communicating between User and bot
 ```python
 class telegram.ext.ConversationHandler(entry_points, states, fallbacks, allow_reentry=False, run_async_timeout=None, 
@@ -186,7 +186,7 @@ The rest of the code can be found in ```bot.py```.
 ## Deployment
 Same as [telegram_sg_checkpoint_pytutorial](https://github.com/tengfone/telegram_sgcheckpoint_pytutorial).
 
-###Docker
+### Docker
 I will not be doing an in-depth tutorial for Docker. You can Dockerize it to Heroku by creating a extension-less file called ```Dockerfile``` in your root directory
 
 On the inside:

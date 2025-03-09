@@ -1,5 +1,5 @@
 # telegram_sgcheckpointv2_pytutorial
-Check out the functioning bot on Telegram [here](https://t.me/SGCustomCamera_bot).
+Updated: 2025 -> https://github.com/tengfone/sgcustoms_telebot 
 
 This is a continuation of the previous tutorial [telegram_sg_checkpoint_pytutorial](https://github.com/tengfone/telegram_sgcheckpoint_pytutorial). In this version, we will use a Conversational style bot and a custom keyboard.
 
